@@ -1,24 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Numerics;
 using UnityEngine;
 
 public class AumentarVelocidad : MonoBehaviour
 {
-    public Rigidbody rb;
-    public float extraForce = 10f;
+    Rigidbody rb;
 
-    void Start()
-    {
+    public float velocidad;
+    
+    public void Awake() {
         rb = GetComponent<Rigidbody>();
     }
 
-    void Update()
-    {
-        // Si quieres aumentar la velocidad en algún momento:
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            rb.AddForce(transform.forward * extraForce, ForceMode.Impulse);
-        }
+    public void FixedUpdate(){
+        float movimientoHorizontal = Input.GetAxis("Horizontal");
+        float movimientoVertical = Input.GetAxis("Vertical");
+        UnityEngine.Vector3 movimiento = new UnityEngine.Vector3(movimientoHorizontal,0,movimientoVertical);
+        rb.AddForce(movimiento*velocidad);
     }
 }
 
