@@ -1,15 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CambioColor : MonoBehaviour
 {
-    void OnTriggerEnter(Collider other)
+    public Color nuevoColor = Color.red; // Color al que se cambiará la esfera al colisionar
+
+    void OnCollisionEnter(Collision collision)
     {
-        Renderer renderer = other.GetComponent<Renderer>();
+        Renderer renderer = GetComponent<Renderer>(); // Obtener el Renderer de la esfera
+
         if (renderer != null)
         {
-            renderer.material.SetColor("_Color", Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f));
+            renderer.material.color = nuevoColor; // Cambiar el color de la esfera
         }
     }
 }

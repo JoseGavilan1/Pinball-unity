@@ -20,4 +20,3 @@ public class AumentarVelocidad : MonoBehaviour
         rb.AddForce(movimiento*velocidad);
     }
 }
-
