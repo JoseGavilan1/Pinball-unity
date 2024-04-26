@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.13556457, g: 0.020584397, b: 0.030104924, a: 1}
+  m_IndirectSpecularColor: {r: 0.1355645, g: 0.020584289, b: 0.03010482, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3309,7 +3309,7 @@ PrefabInstance:
     - target: {fileID: 3975079179108964227, guid: c397adb1ed2db184bbb0179843705ad0, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 12da66e55e2375b48b17b73bc2c61331, type: 2}
+      objectReference: {fileID: 2100000, guid: 85014ab5d92cc264ab26b0ca632749a4, type: 2}
     - target: {fileID: 8777521159131200851, guid: c397adb1ed2db184bbb0179843705ad0, type: 3}
       propertyPath: m_Name
       value: Barreras
@@ -4335,7 +4335,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6454477156434994815, guid: 39fe7f053450856409bb27d9301fce04, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6454477156434994815, guid: 39fe7f053450856409bb27d9301fce04, type: 3}
       propertyPath: m_ProvidesContacts
@@ -4352,10 +4352,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1173416734458536455, guid: 39fe7f053450856409bb27d9301fce04, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1774260281}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39fe7f053450856409bb27d9301fce04, type: 3}
 --- !u!1 &1074494947
 GameObject:
@@ -6451,6 +6448,7 @@ GameObject:
   - component: {fileID: 1627406448}
   - component: {fileID: 1627406447}
   - component: {fileID: 1627406453}
+  - component: {fileID: 1627406454}
   m_Layer: 0
   m_Name: Sphere (1)
   m_TagString: Untagged
@@ -6597,6 +6595,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nuevoColor: {r: 1, g: 0, b: 0, a: 1}
+--- !u!114 &1627406454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1627406446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8babb3ebc00891849a5cbb9f6b91a3f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1631344005
 GameObject:
   m_ObjectHideFlags: 0
@@ -7369,24 +7379,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: -181.53}
---- !u!1 &1774260276 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1173416734458536455, guid: 39fe7f053450856409bb27d9301fce04, type: 3}
-  m_PrefabInstance: {fileID: 1039889076}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1774260281
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1774260276}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ded264fa5b0ce714288350913da93b4a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nuevoColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &1792847584
 GameObject:
   m_ObjectHideFlags: 0
