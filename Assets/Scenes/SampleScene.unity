@@ -639,7 +639,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8777521159131200851, guid: c397adb1ed2db184bbb0179843705ad0, type: 3}
       propertyPath: m_Name
-      value: Barreras (1)
+      value: Barreras arriba
       objectReference: {fileID: 0}
     - target: {fileID: 8816283708142619993, guid: c397adb1ed2db184bbb0179843705ad0, type: 3}
       propertyPath: m_LocalPosition.x
